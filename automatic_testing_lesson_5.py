@@ -11,9 +11,9 @@ def test_validator():
 # BEGIN (write your solution here)
     add_check(lambda x: x > 5)
     add_check(lambda x: x % 2 == 0)
-    assert is_valid(3) == False
-    assert is_valid(4) == False
-    assert is_valid(7) == False
-    assert is_valid(8) == True
+    assert is_valid(3) is False
+    assert is_valid(4) is False
+    assert is_valid(7) is False
+    assert is_valid(8) is True
 
 # END
