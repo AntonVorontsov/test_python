@@ -1,9 +1,15 @@
-def fill(collection, value, begin=0, end=None):
-    chunk = [value for _ in collection[begin:end]]
-    collection[begin:end] = chunk
-    return collection
+def get_mid_point(p1, p2):
+    x1 = p1.get('x')
+    x2 = p2.get('x')
+    y1 = p1.get('y')
+    y2 = p2.get('y')
+
+    x = (x1 + x2) / 2
+    y = (y1 + y2) / 2
+    return {'x': x, 'y': y}
 
 
-coll = [1, 2, 3, 4]
+point1 = {'x': -1, 'y': 10}
+point2 = {'x': 0, 'y': -3}
 
-print(fill(coll, '*', 1, 3))
+print(get_mid_point(point1, point2))
