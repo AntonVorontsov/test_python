@@ -1,15 +1,11 @@
-def get_mid_point(p1, p2):
-    x1 = p1.get('x')
-    x2 = p2.get('x')
-    y1 = p1.get('y')
-    y2 = p2.get('y')
-
-    x = (x1 + x2) / 2
-    y = (y1 + y2) / 2
-    return {'x': x, 'y': y}
+import math
 
 
-point1 = {'x': -1, 'y': 10}
-point2 = {'x': 0, 'y': -3}
+# BEGIN (write your solution here)
+def calculate_distance(p1, p2):
+    x1, y1 = p1
+    x2, y2 = p2
+    distance = math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2))
+    return distance
 
-print(get_mid_point(point1, point2))
+# END
